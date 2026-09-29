@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="나의 이야기와 관심사, 앞으로의 목표를 소개하는 공간입니다.">
+  <title>나의 작은 소개 페이지</title>
+  <style>
+    :root{--paper:#f7f7ef;--ink:#263d32;--muted:#69746b;--green:#315c43;--line:#dce0d4;--accent:#dfedbb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;word-break:keep-all}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--green);outline-offset:6px}::selection{background:var(--accent)}.wrap{max-width:1120px;margin:auto;padding:0 36px}header{height:100px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.logo{font-size:19px;font-weight:800;letter-spacing:-1px}.logo span{color:#78925b}nav{display:flex;gap:30px;font-size:13px}nav a:hover{color:#748d49}.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:65px;align-items:center;padding:90px 0 85px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;display:flex;align-items:center;gap:10px}.dot{width:7px;height:7px;background:#7d9856;border-radius:50%}h1{font-size:clamp(38px,4.6vw,59px);line-height:1.35;letter-spacing:-2.8px;margin:25px 0}h1 em{font-style:normal;position:relative;z-index:0;white-space:nowrap}h1 em:after{content:"";position:absolute;left:0;right:0;bottom:4px;height:15px;background:var(--accent);z-index:-1}.intro{font-size:15px;line-height:1.95;color:var(--muted);max-width:410px}.button{display:inline-flex;gap:32px;align-items:center;padding:16px 23px;border-radius:6px;background:var(--green);color:white;font-size:13px;margin-top:22px}.button:hover{background:#244831}.portrait{position:relative;min-height:365px;background:#e9eddf;border-radius:48% 48% 8px 8px;display:flex;align-items:center;justify-content:center}.portrait svg{width:85%;height:300px}.sticker{position:absolute;right:-14px;bottom:24px;background:#fffdf6;border:1px solid var(--line);box-shadow:0 6px 20px #263d3208;padding:15px 22px;transform:rotate(-7deg);font:italic 22px Georgia,serif}.spark{position:absolute;top:35px;right:28px;font-size:45px;color:#71875b}.caption{font-size:10px;letter-spacing:2px;text-align:center;color:var(--muted);margin-top:19px}.section{padding:52px 0;border-top:1px solid var(--line)}.section-head{display:flex;gap:16px;align-items:baseline;margin-bottom:27px}.number{font:italic 14px Georgia,serif;color:#869475}h2{font-size:24px;letter-spacing:-1px;margin:0}.about{display:grid;grid-template-columns:1fr 1.8fr;gap:50px}.about p{margin:0;color:var(--muted);font-size:15px;line-height:2}.about strong{font-weight:600;color:var(--ink)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#eeefe5;border:1px solid #e4e6d9;padding:29px;border-radius:10px}.icon{font-size:25px;display:block;margin-bottom:23px}.card h3{font-size:17px;margin:0 0 12px}.card p{font-size:13px;color:var(--muted);line-height:1.9;margin:0}.tag{display:inline-block;font-size:10px;letter-spacing:1px;margin-top:24px;color:#728160}.contact{margin:14px 0 55px;background:var(--green);color:var(--paper);border-radius:12px;padding:39px 42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{font-size:26px;margin-bottom:12px}.contact p{color:#d1dece;font-size:13px;line-height:1.8;margin:0}.contact a{background:var(--accent);color:var(--ink);padding:15px 23px;border-radius:5px;font-size:13px;white-space:nowrap}footer{border-top:1px solid var(--line);padding:25px 0 32px;display:flex;justify-content:space-between;gap:15px;font-size:11px;color:var(--muted)}.note{font-size:11px;color:var(--muted);margin:0 0 20px;line-height:1.7}@media(max-width:760px){.wrap{padding:0 24px}header{height:80px}nav{gap:17px;font-size:12px}.hero{grid-template-columns:1fr;gap:40px;padding:52px 0}.hero-art{max-width:380px;width:100%;margin:auto}.portrait{min-height:320px}h1{font-size:43px}.about{grid-template-columns:1fr;gap:0}.cards{grid-template-columns:1fr}.card{padding:25px}.icon{margin-bottom:14px}.tag{margin-top:16px}.contact{align-items:flex-start;flex-direction:column;padding:30px}.section{padding:36px 0}footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#home" aria-label="첫 화면으로">나의 작은 공간<span>.</span></a>
+    <nav aria-label="주 메뉴"><a href="#about">소개</a><a href="#interests">관심사</a><a href="#contact">연락</a></nav>
+  </header>
+  <main id="home">
+    <!-- [이름]과 아래 예시 소개 문구를 자신의 이야기로 바꿔 주세요. -->
+    <section class="hero" aria-labelledby="intro-title">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>A LITTLE ABOUT ME</div>
+        <h1 id="intro-title">안녕하세요,<br>매일 조금씩 성장하는<br><em>[이름]</em>입니다.</h1>
+        <p class="intro">새로운 것을 배우고, 작은 아이디어를 현실로 만드는 즐거움을 좋아합니다. 이곳에 저의 이야기와 좋아하는 것들을 담았습니다.</p>
+        <a class="button" href="#about">저를 소개할게요 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="portrait">
+          <span class="spark" aria-hidden="true">✳</span>
+          <svg viewBox="0 0 340 310" role="img" aria-label="책 위에서 새잎을 피우는 화분 일러스트">
+            <ellipse cx="173" cy="281" rx="120" ry="12" fill="#d7deca"/>
+            <rect x="62" y="256" width="217" height="21" rx="4" fill="#688364"/>
+            <path d="M78 256v21M87 265h173" stroke="#b7c7a4" stroke-width="2"/>
+            <rect x="86" y="237" width="177" height="19" rx="3" fill="#f9f7e9"/>
+            <path d="M96 244h151M96 249h151" stroke="#dedfcd" stroke-width="2"/>
+            <path d="M130 169h93l-12 67h-69z" fill="#be704d"/>
+            <rect x="124" y="160" width="105" height="15" rx="5" fill="#d78a63"/>
+            <path d="M176 163c-2-41 2-72 14-110M179 131l-32-29M183 104l31-27" fill="none" stroke="#466644" stroke-width="5" stroke-linecap="round"/>
+            <path d="M183 111c0-35 24-49 56-48-1 30-23 48-56 48" fill="#63815a"/>
+            <path d="M166 124c-34 1-58-17-61-48 34-3 59 17 61 48" fill="#839a68"/>
+            <path d="M188 77c-22-22-16-48 7-63 18 22 16 43-7 63" fill="#3f6448"/>
+            <path d="M151 187l6 32" stroke="#d99471" stroke-width="4" stroke-linecap="round"/>
+            <path d="M72 155v16M64 163h16M258 125v12M252 131h12" stroke="#96a17b" stroke-width="2"/>
+          </svg>
+          <div class="sticker">Growing, every day.</div>
+        </div>
+        <p class="caption">작은 호기심이 만드는 새로운 시작</p>
+      </div>
+    </section>
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="section-head"><span class="number">01</span><h2 id="about-title">저는 이런 사람이에요.</h2></div>
+      <p><strong>완벽한 시작보다, 일단 해보는 작은 용기를 믿습니다.</strong><br>낯선 분야에도 호기심을 갖고 도전하며 저만의 경험을 쌓아가고 있어요. 일상 속에서 영감을 발견하고, 배운 것을 나누며 함께 성장하고 싶습니다.</p>
+    </section>
+    <section id="interests" class="section" aria-labelledby="interests-title">
+      <div class="section-head"><span class="number">02</span><h2 id="interests-title">요즘, 마음이 가는 것들</h2></div>
+      <div class="cards">
+        <article class="card"><span class="icon" aria-hidden="true">✦</span><h3>새로운 배움</h3><p>몰랐던 것을 알아가는 순간을 좋아해요. 작은 궁금증에서 시작해 저만의 답을 찾아갑니다.</p><span class="tag">LEARNING & CURIOSITY</span></article>
+        <article class="card"><span class="icon" aria-hidden="true">↗</span><h3>아이디어 만들기</h3><p>머릿속 생각을 하나씩 꺼내어 직접 만들어봐요. 서툴러도 완성하는 경험을 소중히 여깁니다.</p><span class="tag">IDEAS & CREATION</span></article>
+        <article class="card"><span class="icon" aria-hidden="true">☀</span><h3>일상의 발견</h3><p>천천히 걷기, 좋은 문장, 새로운 풍경. 평범한 하루에서 나만의 영감을 모읍니다.</p><span class="tag">LIFE & INSPIRATION</span></article>
+      </div>
+    </section>
+    <!-- 아래 이메일 주소를 실제 주소로 바꿔 주세요. -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div><h2 id="contact-title">우리, 이야기 나눠요.</h2><p>함께 나누고 싶은 이야기나 좋은 아이디어가 있다면<br>언제든 편하게 인사해 주세요.</p></div>
+      <a href="mailto:yourname@example.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
+    </section>
+    <p class="note">이 페이지의 소개와 관심사는 예시입니다. [이름], 소개 문구, 이메일 주소를 나의 정보로 바꿔 주세요.</p>
+  </main>
+  <footer><span>© <span id="year">2026</span> [이름]. 나의 속도로, 나답게.</span><span>Made with a little curiosity ✳</span></footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
